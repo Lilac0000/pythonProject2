@@ -1,11 +1,7 @@
-l = [6]
-sum = 0
+lst = [6]
+a = 0
 
-for i in range(0, len(l), 2):
-     sum += l[i]
+for i in range(0, len(lst), 2):
+     a += lst[i]
 
-print(sum*l[-1])
-
-
-
-
+print(a*lst[-1])

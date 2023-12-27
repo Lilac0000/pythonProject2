@@ -1,11 +1,19 @@
-lst = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+lst = [1, 0, 13, 0, 0, 0, 5]
+
+for l in lst:
+    if l != 0:
+        print(l)
+
+for l in lst:
+    if l == 0:
+        print(l)
 
 
-for el in lst[:]:
-    if el == 0:
-        lst.append(lst.pop(lst.index(0)))
 
-print(lst)
+
+
+
+
 
 
 

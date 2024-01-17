@@ -1,22 +1,17 @@
-
-user_input = int(input("Enter seconds: "))
-
+user_input = int(input("Введіть секунди: "))
 
 if user_input < 0 or user_input >= 8640000:
     print("")
 else:
-
     days = user_input // 86400
     hours = (user_input % 86400) // 3600
     minutes = ((user_input % 86400) % 3600) // 60
     seconds = ((user_input % 86400) % 3600) % 60
 
-
-    days_word = "days" if days != 1 else "day"
-    hours_word = "hours" if hours != 1 else "hour"
-    minutes_word = "minutes" if minutes != 1 else "minute"
-    seconds_word = "seconds" if seconds != 1 else "second"
-
+    days_word = "днів" if days != 1 else "день"
+    hours_word = "годин" if hours != 1 else "година"
+    minutes_word = "хвилин" if minutes != 1 else "хвилина"
+    seconds_word = "секунд" if seconds != 1 else "секунда"
 
     result = f"{days} {days_word}, {hours:02}:{minutes:02}:{seconds:02}"
     print(result)
